@@ -92,15 +92,6 @@
 
     <!-- History just for index page -->
     <script src="/assets/js/jquery.history.js"></script>
-    <script>
-        // History, and back button
-        $(function () {
-            jQuery.history.listen()
-            $('#nav .nav .scroll').click(function () {
-                $.history.push('index.html' + $(this).attr('href'));
-            });
-        });
-    </script>
 
     <script>
         $(document).ready(function () {
@@ -149,11 +140,12 @@
             <ul class="nav">
                 <li class="active"><a href="#home"></a></li>
                 <li><a title="How it works" href="#how" class="scroll brand-3">How it works</a></li>
+                <li><a title="Be a donor" href="/donors" class="scroll brand-3">Be a donor</a></li>
 <!--                 <li><a title="Who we are" href="#who" class="scroll fadeto brand-3">Who we are</a></li>
  -->                <li><a title="Get in touch!" href="#contact" class="scroll brand-4">Contact</a></li>
                 <!-- <li><a title="For Employers" href="/employers" class="brand-3">For Employers</a></li>
                 <li><a title="Blog" href="http://leknarf.net" class="brand-3" target="_blank">Blog</a></li> -->
-                <li><a href="donors" class="brand-1">Get started &rarr;</a></li>
+                <li><a href="/start" class="brand-1">Get started &rarr;</a></li>
             </ul>
         </div>
     </div>
@@ -162,62 +154,41 @@
 <!-- Home Page -->
 <div id="home" class="page color-1">
     <div class="inner-page">
-        <h2 class="page-headline">Get paid to help people in need of fecal transplants.</h2>
+        <h2 class="page-headline">Fecal transplants are safe, effective, and easy.</h2>
 
         <h3 class="page-subheadline">We connect healthy donors with people in need of high-quality fecal transplants.</h3>
     </div>
-<!--     <div class="span8 pull-right lazy-container">
-        <img class="lazy" width="600" height="400" alt="" src="/assets/img/pixel.png"
-             data-original="/assets/img/home.svg"/>
-    </div> -->
-    <div class="span3"></div>
-    <div class="span8 inner-page">
+    <div class="span2"></div>
+    <div class="span10 inner-page">
         <ul class="medium-list-two-line">
-            <li><i class="icon-chevron-right"></i>Sign up to get paid for a service you normally perform for free.
+            <li><i class="icon-chevron-right"></i>Effective - Over a 90 percent cure rate for Clostridium difficile infection
             </li>
-            <li><i class="icon-chevron-right"></i>Help people with chronic illnesses.
+            <li><i class="icon-chevron-right"></i>High-quality - We rigorously screen donors to meet our strict quality standards
             </li>
-            <li><i class="icon-chevron-right"></i>Transform lives with a simple donation.
+            <li><i class="icon-chevron-right"></i>Quick - Patients often feel better within a day or two
             </li>
-            <li><i class="icon-chevron-right"></i>Get paid up to $1000 or more.
+            <li><i class="icon-chevron-right"></i>Inexpensive - Fecal matter transplants are much more affordable compared to other treatment methods
             </li>
         </ul>
     </div>
-    <div class="span1"></div>
+    <div class="span2"></div>
     <div class="span12 inner-page">&nbsp;</div>
 
 </div>
 
 <div class="page color-1 cta-container">
-    <a href="donors"
+    <a href="/start"
        class="btn call-to-action">Get started &rarr;</a>
     <hr/>
 </div>
 
-<!-- inline colorbox company project form -->
+<!-- inline colorbox form -->
 <div style='display:none'>
     <div id='inline_content' style='padding:10px; background:#fff;'>
 
-        <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotform.us/form/32824420302138" frameborder="0" style="width:100%; height:2801px; border:none;" scrolling="no"></iframe>
+        <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotform.us/form/32824134560146" frameborder="0" style="width:100%; height:565px; border:none;" scrolling="no"></iframe>
         <script type="text/javascript">window.handleIFrameMessage = function(e) {var args = e.data.split(":");var iframe = document.getElementById("JotFormIFrame");if (!iframe)return;switch (args[0]) {case "scrollIntoView":iframe.scrollIntoView();break;case "setHeight":iframe.style.height = args[1] + "px";break;}};if (window.addEventListener) {window.addEventListener("message", handleIFrameMessage, false);} else if (window.attachEvent) {window.attachEvent("onmessage", handleIFrameMessage);}</script>
 
-    </div>
-</div>
-
-
-<!-- inline colorbox developer form -->
-<div style='display:none'>
-    <div id='inline_content_dev' style='padding:10px; background:#fff;'>
-      <div id='crmWebToEntityForm'><META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>
-        <div class='form-header-group'>
-            <h1 style="color: black;" class='form-header'>Get started</h1>
-            <h2 style="color: black;" class='form-subHeader'>Let us know a little about yourself and we'll be in touch</h2>
-        </div>
-
-        <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotform.us/form/32824420302138" frameborder="0" style="width:100%; height:2801px; border:none;" scrolling="no"></iframe>
-        <script type="text/javascript">window.handleIFrameMessage = function(e) {var args = e.data.split(":");var iframe = document.getElementById("JotFormIFrame");if (!iframe)return;switch (args[0]) {case "scrollIntoView":iframe.scrollIntoView();break;case "setHeight":iframe.style.height = args[1] + "px";break;}};if (window.addEventListener) {window.addEventListener("message", handleIFrameMessage, false);} else if (window.attachEvent) {window.attachEvent("onmessage", handleIFrameMessage);}</script>
-
-        </div>
     </div>
 </div>
 
@@ -230,23 +201,23 @@
         <ul class="features list-inline">
             <li>
                 <h3 id="real-people">
-                    <div><i class="icon-comments"></i></div>
-                    We'll meet with you to determine your eligibility as a donor.
+                    <div><i class="icon-group"></i></div>
+                    We'll locate a number of hand-picked, verified donors in your area. You'll review our list of donor profiles, and select the one with the best fit. 
                 </h3>
 
             </li>
             <li>
                 <h3>
-                    <div><i class="icon-gift"></i></div>
-                    When a patient in your area requires your services, we'll schedule a time for you and the patient to meet and transfer the donation.
+                    <div><i class="icon-calendar"></i></div>
+                    We'll schedule a meeting at a location of your choosing, for your donor to produce fresh feces within 6 hours of your fecal transplantation.
                 </h3>
 
             </li>
             <li>
                 <!--<img src="assets/img/istock-party.jpg"/>-->
                 <h3>
-                    <div><i class="icon-usd"></i></div>
-                    You'll recieve payment from us once the patient confirms that they have received your donation.
+                    <div><i class="icon-thumbs-up"></i></div>
+                    After the donor has finished their duties, we'll follow up with you ensure your satisfaction. Delivery is guaranteed.
                 </h3>
 
             </li>
@@ -254,6 +225,57 @@
     </div>
     <hr/>
 </div>
+
+<div id="who" class="page color-3">
+    <div class="inner-page">
+        <h2 class="page-headline">It's safe, and it works</h2>
+    </div>
+    <div class="row-fluid inner-page">
+    <div class="span12">
+    <p class="lead">Evidence shows fecal transplantation to be safe and effective.</p>
+
+<p>In a thorough review of fecal transplantation therapy by Landy et al, the authors report:</p>
+
+<blockquote>
+    "No studies of faecal transplantation report any adverse events related to the procedure. "
+</blockquote>
+
+<blockquote>
+"Faecal transplantation for C. difficile has been demonstrated to be effective in 145/166 (87%) patients."
+</blockquote>
+
+<blockquote>
+"For ulcerative colitis, of eight patients reported, all have responded and have remained in remission from 6 months to 13 years." <a href="#ext-ref-1">[1]</a>
+</blockquote>
+
+According to a similar review by Smits et al,
+
+<blockquote>
+"In a case series of 3 patients with chronic constipation, FMT [Fecal Microbiota Transplantation] greatly reduced constipation during the month after FMT; all patients defecated daily (or every other day) without the assistance of laxatives." <a href="#ext-ref-2">[2]</a>
+</blockquote>
+
+Borody et al,
+
+<blockquote>
+"Other disease states that are closely linked to the GI microbiota, such as obesity, metabolic syndrome, and diabetes mellitus, may potentially be treated by FMT in the future. A recent pilot study assessed the effects of FMT from lean healthy donors to individuals with metabolic syndrome. Six weeks post-FMT, improved insulin sensitivity was noted in the 9 recipients, along with intestinal microbiota changes characterized by increased butyrate-producing bacteria." <a href="#ext-ref-1">[3]</a>
+</blockquote>
+
+<div>
+    <a id="ext-ref-1">1.</a> Landy J, Al-Hassi HO, McLaughlin SD, et al. Review article: faecal transplantation therapy for gastrointestinal disease. Alimentary pharmacology &amp; therapeutics. 2011;34(4):409–15.
+</div>
+<div>
+    <a id="ext-ref-2">2.</a> Smits LP, Bouter KEC, de Vos WM, Borody TJ, Nieuwdorp M. Therapeutic Potential of Fecal Microbiota Transplantation. Gastroenterology. 2013.
+</div>
+<div>
+    <a id="ext-ref-3">3.</a> Borody TJ, Paramsothy S, Agrawal G. Fecal microbiota transplantation: indications, methods, evidence, and future directions. Current gastroenterology reports. 2013;15(8):337.
+</div>
+
+    </div>
+    </div>
+
+    <hr>
+</div>
+
 
 <!-- Good -->
 <div id="good" class="page color-3">
@@ -270,7 +292,7 @@
             <div>
                 <div class="pull-left">
                     <ul class="medium-list-two-line">
-                        <li><i class="icon-check"></i>Fast &amp; safe - Payments are held in escrow and are released as soon as confirmation is received.
+                        <li><i class="icon-check"></i>Fast &amp; safe - Payments are held in escrow and are released only when confirmation is received.
                         </li>
                         <li><i class="icon-file-text-alt"></i>Easy - We take care of the paperwork and the legalese.
                         </li>
@@ -290,11 +312,107 @@
       <div id='crmWebToEntityForm'><META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>
         <div class='form-header-group'>
             <h1 style="color: black;" class='form-header'>Get started</h1>
-            <h2 style="color: black;" class='form-subHeader'>Let us know about yourself and we'll be in touch</h2>
         </div>
 
-        <iframe id="JotFormIFrame" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="http://form.jotform.us/form/32824420302138" frameborder="0" style="width:100%; height:2801px; border:none;" scrolling="no"></iframe>
-        <script type="text/javascript">window.handleIFrameMessage = function(e) {var args = e.data.split(":");var iframe = document.getElementById("JotFormIFrame");if (!iframe)return;switch (args[0]) {case "scrollIntoView":iframe.scrollIntoView();break;case "setHeight":iframe.style.height = args[1] + "px";break;}};if (window.addEventListener) {window.addEventListener("message", handleIFrameMessage, false);} else if (window.attachEvent) {window.attachEvent("onmessage", handleIFrameMessage);}</script>
+<script src="http://cdn.jotfor.ms/static/jotform.js?3.1.76" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init(function(){
+      $('input_16').hint('ex: myname@example.com');
+   });
+</script>
+<link href="http://cdn.jotfor.ms/static/formCss.css?3.1.76" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="http://cdn.jotfor.ms/css/styles/nova.css?3.1.76" />
+<link type="text/css" media="print" rel="stylesheet" href="http://cdn.jotfor.ms/css/printForm.css?3.1.76" />
+<style type="text/css">
+    .form-label{
+        width:150px !important;
+    }
+    .form-label-left{
+        width:150px !important;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px !important;
+    }
+    .form-all{
+        width:590px;
+        color:#555 !important;
+        font-family:'Lucida Grande',' Lucida Sans Unicode',' Lucida Sans',' Verdana',' Tahoma',' sans-serif';
+        font-size:14px;
+    }
+</style>
+
+<link type="text/css" rel="stylesheet" href="http://jotform.us/css/styles/buttons/form-submit-button-light_rounded.css?3.1.76"/>
+<form class="jotform-form" action="http://submit.jotform.us/submit/32824134560146/" method="post" name="form_32824134560146" id="32824134560146" accept-charset="utf-8">
+  <input type="hidden" name="formID" value="32824134560146" />
+  <div class="form-all">
+    <ul class="form-section">
+      <li id="cid_24" class="form-input-wide">
+        <div class="form-header-group">
+          <h2 id="header_24" class="form-header">
+            Fecal Matter Transplant Request
+          </h2>
+          <div id="subHeader_24" class="form-subHeader">
+            Please fill in the form below to sign up for a fecal matter transplant.
+          </div>
+        </div>
+      </li>
+      <li class="form-line" id="id_15">
+        <label class="form-label-left" id="label_15" for="input_15">
+          Your Name<span class="form-required">*</span>
+        </label>
+        <div id="cid_15" class="form-input"><span class="form-sub-label-container"><input class="form-textbox validate[required]" type="text" size="10" name="q15_yourName[first]" id="first_15" />
+            <label class="form-sub-label" for="first_15" id="sublabel_first"> First Name </label></span><span class="form-sub-label-container"><input class="form-textbox validate[required]" type="text" size="15" name="q15_yourName[last]" id="last_15" />
+            <label class="form-sub-label" for="last_15" id="sublabel_last"> Last Name </label></span>
+        </div>
+      </li>
+      <li class="form-line" id="id_16">
+        <label class="form-label-left" id="label_16" for="input_16">
+          Your E-mail Address<span class="form-required">*</span>
+        </label>
+        <div id="cid_16" class="form-input">
+          <input type="email" class=" form-textbox validate[required, Email]" id="input_16" name="q16_yourEmail16" size="32" value="" />
+        </div>
+      </li>
+      <li class="form-line" id="id_25">
+        <label class="form-label-left" id="label_25" for="input_25">
+          City<span class="form-required">*</span>
+        </label>
+        <div id="cid_25" class="form-input">
+          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_25" name="q25_city" size="30" value="" />
+        </div>
+      </li>
+      <li class="form-line" id="id_26">
+        <label class="form-label-left" id="label_26" for="input_26">
+          State<span class="form-required">*</span>
+        </label>
+        <div id="cid_26" class="form-input">
+          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" id="input_26" name="q26_state26" size="5" value="" />
+        </div>
+      </li>
+      <li class="form-line" id="id_14">
+        <div id="cid_14" class="form-input-wide">
+          <div style="text-align:center" class="form-buttons-wrapper">
+            <button id="input_14" type="submit" class="form-submit-button form-submit-button-light_rounded">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <input type="hidden" id="simple_spc" name="simple_spc" value="32824134560146" />
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "32824134560146-32824134560146";
+  </script>
+</form>
 
       </div>
     </div>
@@ -302,13 +420,39 @@
 </div>
 </div>
 
-<!-- Call to action 2 -->
-<!-- <div class="page color-3">
-    <a href="donors"
-       class="btn call-to-action">Get started &rarr;</a>
+<!-- Be a donor -->
+<div id="beadonor" class="page color-1">
+    <div class="inner-page">
+        <h2 class="page-headline">Be a donor</h2>
+        <h3 class="page-subheadline">Get paid to help people in need of fecal transplants</h3>
+    </div>
+
+    <div class="inner-page row-fluid">
+        <ul class="medium-list-two-line">
+            <li><i class="icon-chevron-right"></i>Sign up to get paid for a service you normally perform for free</li>
+            <li><i class="icon-chevron-right"></i>Help people with chronic illnesses</li>
+            <li><i class="icon-chevron-right"></i>Transform lives with a simple donation</li>
+            <li><i class="icon-chevron-right"></i>Get paid up to $1000 or more</li>
+        </ul>
+    </div>
+
+    <div class="row-fluid inner-page">
+        <div class="span12">
+            Simply sign up through our contact form below, and we'll schedule an interview to determine your eligibility as a donor. If you qualify, you'll be added to our database. When a patient in your area requires your services, we'll schedule a time for you and the patient to meet and transfer the donation. You'll make your donation at a location of the patient's choosing, frequently a clinic or private residence. You receive payment from us once the patient confirms that they have received your donation.
+        </div>
+    </div>
+
     <hr/>
 </div>
- -->
+<!-- /Benefits -->
+
+<!-- Call to action 2 -->
+<div class="page color-3">
+    <a href="donors"
+       class="btn call-to-action">Be a donor &rarr;</a>
+    <hr/>
+</div>
+
 <!-- Contact Us -->
 <div id="contact" class="page color-4">
     <div class="inner-page">
